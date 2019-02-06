@@ -6,6 +6,7 @@ export const FETCH_ERROR = 'FETCH_ERROR';
 
 
 export function getChars() {
+  console.log('action');
   return function(dispatch) {
     dispatch({ type: FETCH_START });
     axios
